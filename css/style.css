@@ -583,7 +583,7 @@ img {
   overflow: auto;
 }
 
-/* ---MODAL--- */
+/* -----MODAL----- */
 
 .backdrop {
   position: fixed;
@@ -620,10 +620,6 @@ img {
   transition: transform 250ms var(--transition-cubic);
 }
 
-.modal-close-icon {
-  fill: #000000;
-}
-
 .modal-close-btn {
   width: 24px;
   height: 24px;
@@ -632,4 +628,8 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
   margin-left: auto;
+}
+
+.modal-close-icon {
+  fill: #000000;
 }
