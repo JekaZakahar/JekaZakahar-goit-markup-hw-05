@@ -542,11 +542,13 @@ img {
   max-width: calc((100% - 48px) / 3);
   background: var(--primary-color);
   border: 1px solid var(--accent-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms var(--transition-cubic);
 }
 
 .ourwork-item:is(:hover, :focus) {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .ourwork-link .ourwork-description-text {
@@ -611,7 +613,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  height: 576px;
+  min-height: 576px;
   padding: 24px;
   background-color: var(--modal-bg-color);
   border-radius: 4px;
